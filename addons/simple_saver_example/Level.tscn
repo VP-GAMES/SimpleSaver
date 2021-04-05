@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://addons/simple_saver_example/Item.gd" type="Script" id=1]
+[ext_resource path="res://addons/simple_saver_example/textures/banana.png" type="Texture" id=2]
+[ext_resource path="res://addons/simple_saver_example/textures/cherry.png" type="Texture" id=3]
+[ext_resource path="res://addons/simple_saver_example/textures/apple.png" type="Texture" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="apple" type="Sprite" parent="."]
+position = Vector2( 243, 273 )
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 4 )
+script = ExtResource( 1 )
+save_uuid = "6a3ec873-9635-4d0d-abc7-0ec2c4d76323"
+
+[node name="banana" type="Sprite" parent="."]
+position = Vector2( 403, 354 )
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+
+[node name="cherry" type="Sprite" parent="."]
+position = Vector2( 514, 263 )
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 3 )

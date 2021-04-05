@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "EditorProperty",
+"class": "EditorPropertySaveUuid",
+"language": "GDScript",
+"path": "res://addons/simple_saver/EditorPropertySaveUUID.gd"
+}, {
+"base": "Resource",
+"class": "SaveData",
+"language": "GDScript",
+"path": "res://addons/simple_saver/SavaData.gd"
+} ]
+_global_script_class_icons={
+"EditorPropertySaveUuid": "",
+"SaveData": ""
+}
+
+[application]
+
+config/name="SimpleSaver"
+config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "simple_saver" )
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
