@@ -27,6 +27,7 @@ _global_script_class_icons={
 [application]
 
 config/name="SimpleSaver"
+run/main_scene="res://addons/simple_saver_example/Level.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]

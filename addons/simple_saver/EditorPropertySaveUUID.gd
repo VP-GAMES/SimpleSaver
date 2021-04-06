@@ -20,6 +20,11 @@ func _init():
 	add_child(hBox)
 	button.connect("pressed", self, "on_button_pressed")
 
+func _process(delta: float) -> void:
+	var new_value = get_edited_object()[get_edited_property()]
+	if not new_value or new_value.empty():
+		on_button_pressed()
+
 func on_button_pressed():
 	if (updating):
 		return

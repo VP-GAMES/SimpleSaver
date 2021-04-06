@@ -19,8 +19,11 @@ position = Vector2( 403, 354 )
 scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 2 )
 script = ExtResource( 1 )
+save_uuid = "723abf8a-ec75-425c-b410-42c3b8415b44"
 
 [node name="cherry" type="Sprite" parent="."]
 position = Vector2( 514, 263 )
 scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 3 )
+script = ExtResource( 1 )
+save_uuid = "740bd79b-3e60-4df6-8e10-fbf5e498ab5f"
